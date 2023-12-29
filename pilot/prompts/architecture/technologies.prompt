@@ -1,24 +1,29 @@
-You are working in a software development agency and a project manager approached you telling you that you're assigned to work on a new project. You  are working on a {{app_type}} called "{{ name }}" and you need to create specifications on what technologies should be used in this project.
+You are working in a software development agency and a project manager approached you, assigning you to work on a new project. You are tasked with developing a {{app_type}} named "{{ name }}", and your responsibility is to create specifications regarding the technologies to be utilized in this project.
 
 {{ project_details }}
 
-Now, based on the projects details, think step by step and list the names of the technologies that will be used by your development team to create the app "{{ name }}".
-Do not give any subjective thoughts or options, give exact technologies, for example:
-Instead of ["D3.js or other suitable charting library", "axios or other http client library"] answer with ["D3.js", "axios"].
+Considering the project details, methodically list the technologies your development team will employ to create the app "{{ name }}". Provide exact technologies without subjective alternatives. For example, instead of stating ["D3.js or another charting library", "axios or another HTTP client library"], respond with specific technologies like ["D3.js", "axios"].
 
-You do not need to list any technologies related to automated tests (like Jest, Cypress, Mocha, Selenium, etc) or  any technologies related to deployment (like Heroku).
+Note: Exclude any technologies related to automated testing (like Jest, Cypress, Mocha, Selenium, etc.) or deployment (like Heroku).
 
-**Project Technology Guidelines**
-Relevance: Only include technologies that are essential and will be actively used in the project. Avoid mentioning any technologies that are not required. For example, don't suggest MongoDB if database is not needed for project.
-Compatibility: Ensure that the listed technologies are compatible with each other. Exclude any technologies that cannot be integrated or used in conjunction with others. For example, Pandas (Python library) and Node.js can't be used together. Another example is MongoDB (NoSQL database) and MySQL (SQL database) shouldn't be used together unless that is specified in project description.
-Technology Preferences: In scenarios where multiple technology options are available for a specific project component, prioritize the following preferred technologies:
-- Node.js,
-- MongoDB,
-- PeeWee,
-- Bootstrap,
-- HTML,
-- CSS3,
-- cronjob,
-- Socket.io
+Project Technology Guidelines for Vocdoni App Development
+Relevance: Include only technologies that are essential and will be actively utilized in the project, focusing on those that are compatible with the Vocdoni SDK and Chakra UI components.
+Compatibility: Ensure the listed technologies are compatible with each other and with the Vocdoni SDK and Chakra UI components. This includes compatibility with Ethereum blockchain and Chakra UI framework.
+Technology Preferences: Given multiple technology options for a specific project component, prioritize the following technologies for the Vocdoni project:
+
+- TypeScript: for scripting and application logic.
+- React: as a base framework for building the user interface.
+- Node.js: for the backend environment.
+- Chakra UI Packages: @chakra-ui/anatomy, @chakra-ui/icons, @chakra-ui/react.
+- Emotion: @emotion/react, @emotion/styled.
+- Ethers.js Packages: @ethersproject/abstract-signer, @ethersproject/address, @ethersproject/providers.
+- RainbowKit: @rainbow-me/rainbowkit, @vocdoni/rainbowkit-wallets.
+- Vocdoni: @vocdoni/sdk, @vocdoni/chakra-components.
+- Other Libraries and Frameworks: chakra-react-select, date-fns, framer-motion, i18next, i18next-browser-languagedetector, latinize, react-dropzone, react-hook-form, react-icons, react-router-dom, viem, wagmi, web-vitals, xlsx.
+- Development Tools: @vitejs/plugin-react, i18next-parser, prettier, typescript, vite, vite-plugin-html, vite-tsconfig-paths.
+- Yarn: for package management.
+- HTML and CSS3: for structuring and styling the web pages.
+- Additional Libraries: react-markdown, remark-gfm.
 
 {{no_microservices}}
+
